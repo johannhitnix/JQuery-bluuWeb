@@ -12,13 +12,18 @@
             width: 100px;
             position: absolute;
         }
+
+        .margen-superior{
+            display: block;
+            margin-top: 45px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container" id="contenido">
         <h1 class="display-4" id="titulo">Lorem, ipsum dolor.</h1>
-        <ul class="list-unstyled" style="font-size: 2rem;">
+        <ul class="list-unstyled" id="primera-lista" style="font-size: 2rem;">
             <li id="li-1">uno</li>
             <li id="li-2">dos</li>
             <li id="li-3">tres</li>            
@@ -53,7 +58,13 @@
             <button class="btn btn-primary" id="btn-toggle">Toggle</button>   
             <button class="btn btn-dark" id="btn-animate">Animate!</button>         
         </div>
-        <div id="cuadrito" class="bg-dark mb-2">
+        <div id="cuadrito" class="bg-dark mb-5 pt-5">
+        </div>
+        <div id="urls" class="mt-5 pt-5">
+            <ul>
+                <li><a href="https://www.google.com" title="Google" class="bububu">ir a Google</a></li>
+                <li><a href="https://www.facebook.com" title="Facebook">if a Facebook</a></li>
+            </ul>
         </div>
     </div>
 

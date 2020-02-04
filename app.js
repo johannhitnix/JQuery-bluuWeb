@@ -2,8 +2,8 @@ $(document).ready(function(){
     // REEMPLAZAR CONTENIDO
     $('#titulo').html('Lorem ipsum dolor sit, amet consectetur adipisicing.')
 
-    $('.container li:first').html('lo que sea')
-    $('.container li:last').html('me da igual')
+    $('.container #primera-lista li:first').html('lo que sea')
+    $('.container #primera-lista li:last').html('me da igual')
 
     // QUITAR Y REMOVER CLASES CSS
     $('#li-2').addClass('text-danger')
@@ -88,4 +88,20 @@ $(document).ready(function(){
             }, 500)
         })
     })
+
+    // SELECTORES DE ATRIBUTO
+    $('[title="Google"]').css({ background : '#ccc' });
+    $('[title="Facebook"]').css({ background : '#f0f' });
+
+    // SELECCIONAR VARIOS TIPOS DE ETIQUETA
+    $('p, a').addClass('margen-superior');
+
+    // RECORRER EL DOM HASTA ENCONTRAR LA CLASE DESEADA, METODO .find()
+    let busqueda = $('#contenido').find('.mt-5');
+    console.log("primera busqueda");
+    console.log(busqueda);
+
+    // METODO .parent()
+    let busqueda2 = $('#btn-toggle').parent().parent().find('[title="Google"]');
+    console.log( busqueda2);
 })
